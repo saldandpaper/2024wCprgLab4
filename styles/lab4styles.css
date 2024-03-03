@@ -1,0 +1,20 @@
+.hero-container {
+
+    border: 1px red solid;
+    background-image: url(../assets/images/370zblack.jpg);
+    background-position: center;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    & li{
+        /* border: red solid 1px; */
+        align-items: center;
+
+        & h1, p {
+            text-align: center;
+        }
+    }
+}
