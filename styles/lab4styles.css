@@ -1,20 +1,48 @@
+:root {
+    font-family: Century-Gothic;
+}
+
+
 .hero-container {
 
-    border: 1px red solid;
-    background-image: url(../assets/images/370zblack.jpg);
+    /* border: 1px red solid; */
+
+    background-image: url(../assets/images/trees.JPG);
     background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
+    text-shadow: #000 0px 0 5px;
 
-    & li{
-        /* border: red solid 1px; */
-        align-items: center;
+    & .hero-title, .hero-subtitle {
+        text-align: center;
+        width: 60vw;
+        border: 1pt solid #FFFFFF7a;
+        border-radius: 10pt;
+        margin: 2pt;
+        padding: 10pt;
+        box-shadow: 0px 0px 4px black;
+        background-color: #00000080;
+        backdrop-filter: blur(10pt);
+    }
+}
 
-        & h1, p {
-            text-align: center;
-        }
+.content-container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 50%;
+        height: fit-content;
+    }
+
+    & .content-right {
+        margin: 10pt;
     }
 }
