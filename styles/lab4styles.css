@@ -130,21 +130,15 @@ title {
             cursor: pointer;
         }
 
+        & p {
+            display: none;
+        }
+        
         & input:checked + h2 + p {
             display: block;
         }
-
-        p {
-            display: none;
-        }
-
-
     }
 }
-
-
-
-
 
 /*ahhhhhh*/
 

@@ -2,51 +2,86 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
-	<link rel="stylesheet" type="text/css" href="./styles/fonts.css">
-	<link rel="stylesheet" type="text/css" href="./styles/global.css">
-	<link rel="stylesheet" type="text/css" href="./styles/lab4styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Afacad" rel="stylesheet">
-	<title>Common Website Features</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./styles/global.css">
+    <link rel="stylesheet" type="text/css" href="./styles/lab_four_starter.css">
+    <link rel="stylesheet" type="text/css" href="./styles/lab4styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        .accordion {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        h2 {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        input:checked + h2 + p {
+            display: block;
+        }
+
+        .accordion p {
+            display: none;
+        }
+    </style>
+
+    <title>Common Website Features</title>
 </head>
+
 <body>
-	<section class="hero-container">
-			<h1 class="hero-title">hero banner title</h1>
-			<p class="hero-subtitle">hero banner subtitle.</p>
-	</section>
-	<section class="container content-container">
-		<img src="./assets/images/needles.JPG" alt="pine needles in winter">
-		<div class="content-right">
-			<h1>content w/ image</h1>
-			<p>lorum ipsum stuff and some more lorum ipsum stuff and can you believe it there's even more lorum ipsum stuff.</p>
-			<a  href="https://www.google.ca">>>free virus<<</a>
-		</div>
-	</section>
-	<section class="container accordion-container">
-		<div class="accordion">
-			<input type="checkbox" id="acc1">
-			<h2><label for="acc1">Accordion #1</label></h2>
-			<p>Accordion with basic HTML and CSS only. </p>
-		</div>
-		<div class="accordion">
-			<input type="checkbox" id="acc2">
-			<h2><label for="acc2">Accordion #2</label></h2>
-			<p>Can you believe it's not butter?</p>
-		</div>
-		<div class="accordion">
-			<input type="checkbox" id="acc3">
-			<h2><label for="acc3">Accordion #3</label></h2>
-			<p>An accordion is a musical instrument. This thing is not a musical instrument. Therefore, this thing is a lie. </p>
-		</div>
-	</section>
-	<section class="footer-container">
-		<!-- Remove and add footer HTML -->
-		<div class="remove-assignment-content">
-			<h1>Footer</h1>
-		</div>
-	</section>
+    <section class="hero-container">
+        <h1 class="hero-title">hero banner title</h1>
+        <p class="hero-subtitle">hero banner subtitle.</p>
+    </section>
+    <section class="container content-container">
+        <img src="./assets/images/needles.JPG">
+        <div class="content-right">
+            <h1>content w/ image</h1>
+            <p>lorum ipsum stuff</p>
+            <a href="https://www.google.ca">>>free virus<<</a>
+        </div>
+    </section>
+    <section class="container accordion-container">
+        <div class="accordion">
+            <input type="checkbox" id="acc1">
+            <h2><label for="acc1">Accordion #1</label></h2>
+            <p>Accordion with basic HTML and CSS only. </p>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="acc2">
+            <h2><label for="acc2">Accordion #2</label></h2>
+            <p>Can you believe it's not butter?</p>
+        </div>
+        <div class="accordion">
+            <input type="checkbox" id="acc3">
+            <h2><label for="acc3">Accordion #3</label></h2>
+            <p>An accordion is a musical instrument. This thing is not a musical instrument. Therefore, this thing is a lie. </p>
+        </div>
+    </section>
+    <section class="footer-container">
+        <!-- Remove and add footer HTML -->
+        <div class="remove-assignment-content">
+            <h1>Footer</h1>
+        </div>
+    </section>
 </body>
+
 </html>
