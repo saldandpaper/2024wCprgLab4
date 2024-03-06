@@ -6,10 +6,6 @@ title {
     display: none;
 }
 
-.tts-styles {
-    display: none;
-}
-
 *, *::after, *:before {
     all: unset;
     margin: 0;
@@ -128,22 +124,27 @@ title {
             margin: 0;
             padding: 10pt;
             cursor: pointer;
+            margin: 5pt;
+            transition: background-color 0.3s ease-in-out;
         }
 
         & p {
             display: none;
+            margin: 5pt;
+            padding: 5pt;
+            background-color: #0000006f;
+            /* border: green 1pt solid; */
         }
         
         & input:checked + h2 + p {
             display: block;
         }
+
+        & input:checked + h2 {
+            background-color: rgb(126, 222, 243, 0.8);
+        }
     }
 }
-
-/*ahhhhhh*/
-
-
-
 
 
 .footer-container {
