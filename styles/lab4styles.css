@@ -1,7 +1,26 @@
+body {
+    font-family: "afacad", sans-serif;
+}
+
+title {
+    display: none;
+}
+
+.tts-styles {
+    display: none;
+}
+
+*, *::after, *:before {
+    all: unset;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .hero-container {
-
+    color: #fff;
+    height: 100vh;
     /* border: 1px red solid; */
-
     background-image: url(../assets/images/trees.JPG);
     background-position: center;
     background-attachment: fixed;
@@ -29,6 +48,7 @@
 
 .content-container {
     /* border: blue 2pt solid; */
+    background-color: #fcff5c;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -46,7 +66,9 @@
         /* border: 1px red solid; */
         flex: 1;
         height: fit-content;
-        margin: 10pt;
+        margin: 20pt;
+        display: flex;
+        flex-flow: column wrap;
 
         & h1 {
             padding: 0;
@@ -61,6 +83,8 @@
             /* padding: 10pt; */
             margin: none;
             font-family: "Afacad", sans-serif;
+            width: fit-content;
+            padding: 10pt;
         
             &:hover {
                 background-color: #7c6d84;
@@ -69,3 +93,68 @@
         }
     }
 }
+
+.accordion-container {
+    background-color: #fc7753;
+    color: #fff;
+    height: fit-content;
+    width: 70dvw;
+    padding: 10pt;
+    display: flex;
+    flex-flow: column wrap;
+
+    & .accordion {
+        position: relative;
+        /* border: 1pt solid red; */
+        padding: 0;
+        display: flex;
+        flex-flow: column wrap;
+
+        & input {
+            /* border: 2px solid purple; */
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            visibility: 0;
+        }
+
+        & h2 {
+            /* border: 1pt solid blue; */
+            background-color: rgb(126, 222, 243);
+            color: black;
+            margin: 0;
+            padding: 10pt;
+            cursor: pointer;
+        }
+
+        & input:checked + h2 + p {
+            display: block;
+        }
+
+        p {
+            display: none;
+        }
+
+
+    }
+}
+
+
+
+
+
+/*ahhhhhh*/
+
+
+
+
+
+.footer-container {
+    background-color: #f2efea;
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
